@@ -9,6 +9,76 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.redcarrottt.remotekeyclient.MainActivity" >
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/updateDeviceListButton_mainActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.67"
+            android:text="DEVICE UPDATE" />
+
+        <Button
+            android:id="@+id/disconnectDeviceButton_mainActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="DISCONNECT" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/deviceListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.07"
+        android:paddingBottom="20dp"
+        android:paddingTop="10dp" >
+    </ListView>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/homeButton_mainActivity"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="SECURITY KEY SEND" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/menuButton_mainActivity"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:text="TEST" />
+
+        <TextView
+            android:id="@+id/connectedDeviceTextView_mainActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="No device connected"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
     <TextView
         android:id="@+id/statusTextView_mainActivity"
         android:layout_width="match_parent"
@@ -19,76 +89,5 @@
         android:paddingTop="10dp"
         android:text="Idle"
         android:textSize="16dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-
-        <Button
-            android:id="@+id/updateDeviceListButton_mainActivity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Update" />
-
-        <Button
-            android:id="@+id/disconnectDeviceButton_mainActivity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:enabled="false"
-            android:text="Disconnect" />
-
-        <Button
-            android:id="@+id/turnOnOffBluetoothPButton_mainActivity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="BT ON" />
-    </LinearLayout>
-
-    <ListView
-        android:id="@+id/deviceListView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:paddingBottom="20dp"
-        android:paddingTop="10dp" >
-    </ListView>
-
-    <TextView
-        android:id="@+id/connectedDeviceTextView_mainActivity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingBottom="10dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingTop="10dp"
-        android:text="No device connected"
-        android:textSize="16dp"
-        android:textStyle="bold" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-
-        <Button
-            android:id="@+id/menuButton_mainActivity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Menu" />
-
-        <Button
-            android:id="@+id/homeButton_mainActivity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Home" />
-
-        <Button
-            android:id="@+id/backButton_mainActivity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Back" />
-    </LinearLayout>
 
 </LinearLayout>
